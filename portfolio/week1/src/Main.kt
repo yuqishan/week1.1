@@ -13,7 +13,7 @@ fun main(args:Array<String>){
     val number2=args[1].toDouble()
     val number3=args[2].toDouble()
     val s= (args[0].toDouble()+ args[1].toDouble() + args[2].toDouble())/2
-    val Area=sqrt(s*(s-args[0].toDouble())*(s-args[1].toDouble())*(s-args[2].toDouble()))
-    println("Area=%.5f".format(Area))
+    val Area = sqrt(s*(s-args[0].toDouble())*(s-args[1].toDouble())*(s-args[2].toDouble()))
+    println("Area = %.5f".format(Area))
 
 }

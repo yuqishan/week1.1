@@ -18,8 +18,7 @@ fun main(args: Array<String>) {
     val n3 =args[2].toDouble()
     while (initial<=max){
         val fahrenheit = initial * 9.0 / 5.0 + 32
-        println("%8.1f".format(initial))
-        println(initial)
+        println("%8.1f %8.1f".format(initial, fahrenheit))
         initial += n3
     }
 
