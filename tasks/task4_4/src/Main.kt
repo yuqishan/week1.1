@@ -9,5 +9,18 @@ import com.github.ajalt.mordant.table.table
 import com.github.ajalt.mordant.terminal.Terminal
 
 fun main(args: Array<String>) {
-    // Add your code here
+    if(args.size!=3){
+        println("Error")
+        exitProcess(1)
+    }
+    var initial=args[0].toDouble()
+    val max=args[1].toDouble()
+    val n3 =args[2].toDouble()
+    while (initial<=max){
+        val fahrenheit = initial * 9.0 / 5.0 + 32
+        println("%8.1f".format(initial))
+        println(initial)
+        initial += n3
+    }
+
 }
